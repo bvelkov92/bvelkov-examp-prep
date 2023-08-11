@@ -49,8 +49,8 @@ jobs:
           node-version: 14.x
           cache: 'npm'
       - name: Installing NPM
-    - run: npm install
-    - name: Runnig Unit tests
-      run: npx playwright install --with-deps
-    - name: Run UI tests
-      run: npm run test:ui
+      - run: npm install
+      - name: Runnig Unit tests
+        run: npx playwright install --with-deps
+      - name: Run UI tests
+        run: npm run test:ui
